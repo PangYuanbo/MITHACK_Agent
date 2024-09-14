@@ -1,4 +1,4 @@
-import FastAPI
+
 from fastapi import FastAPI
 from fastapi.responses import HTMLResponse
 from Teacher_end import New_project
