@@ -26,7 +26,7 @@ async def new_project(Content):
         Your response should be a JSON object with three keys: 
         1. 'estimated_time' (the estimated duration to complete the assignment in terms of continuous work time, e.g., "1030" hours or "24 hours" or "1 second"; cannot be after the deadline),
         2. 'deadline' (the proposed deadline for the assignment, e.g., "2024-10-01"),
-        3. 'estimation explanation' (justify in depth why the estimate is correct).
+        3. 'project summary' (briefly explain the general steps and problems associated with this assignment).
         """
         
         client = OpenAI(api_key=OPENAI_API_KEY)
