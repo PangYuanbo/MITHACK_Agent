@@ -1,3 +1,4 @@
+import random
 
 from fastapi import FastAPI, Request
 from fastapi.responses import HTMLResponse
@@ -30,8 +31,8 @@ async def Newproject(
     return {"project": project}
 
 @app.post("/UploadToMailbox/")
-def UploadToMailbox(
+async def UploadToMailbox(
         Content: str
 ):
-    Send_message(Content)
+    Send_message(Content,random.randint(8000,9000))
     return {"Message sent to all students"}
